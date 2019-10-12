@@ -1,14 +1,9 @@
-import React, {useRef} from 'react';
+import React, {useState} from 'react';
 import { Text, SafeAreaView } from 'react-native';
-import {observer} from './mobx-react-lite/observer'
-import {observable} from 'mobx'
+import { observer } from './mobx-react-lite/observer';
 
-const App = () => {
-  const store = useRef(
-    observable({
-      name: 'Drew ',
-    }),
-  )
+const App = (props) => {
+  useState(null)
 
   return (
     <SafeAreaView>
@@ -16,5 +11,6 @@ const App = () => {
     </SafeAreaView>
   );
 };
+
 
 export default observer(App);
