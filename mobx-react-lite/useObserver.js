@@ -1,4 +1,4 @@
-import {Reaction} from 'mobx';
+import {Reaction} from '../mobx/core/reaction';
 import {useEffect, useRef} from 'react';
 
 export function useObserver(fn) {
